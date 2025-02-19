@@ -25,6 +25,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v6
         with:
-          context: ./Containerfile
+          context: .
+          file: ./Dockerfile
           push: true
           tags: martinezj/to-do-app:1.1.0
